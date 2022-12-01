@@ -1,0 +1,44 @@
+.leaflet-draw-draw-marker:nth-of-type(1) {
+    background-image: url("/icons/tool_add_climate.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    padding-bottom: 3px;
+}
+
+.leaflet-draw-draw-marker:nth-of-type(2) {
+    background-image: url("/icons/tool_add_equity.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    padding-bottom: 2px;
+}
+
+.leaflet-draw-draw-marker:nth-of-type(3) {
+    background-image: url("/icons/tool_add_vibrancy.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px !important;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    padding-bottom: 2px;
+}
+
+.leaflet-draw-draw-marker:nth-of-type(4) {
+    background-image: url("/icons/tool_add_community.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px !important;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    padding-bottom: 2px;
+}
+
+.leaflet-draw-draw-marker:nth-of-type(5) {
+    background-image: url("/icons/tool_add_transparency.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px !important;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    padding-bottom: 2px;
+}

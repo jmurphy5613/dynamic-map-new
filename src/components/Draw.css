@@ -1,0 +1,30 @@
+.leaflet-control-zoom-in {
+    background-image: url("/icons/tool_zoom_in.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px !important;
+}
+.leaflet-control-zoom-out {
+    background-image: url("/icons/tool_zoom_out.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 0 0 !important;
+    width: 30px !important;
+}
+a.leaflet-draw-edit-edit {
+    background-image: url("/icons/tool_edit.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px !important;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    padding-bottom: 2px;
+}
+a.leaflet-draw-edit-remove {
+    background-image: url("/icons/tool_delete.png") !important;
+    background-repeat: no-repeat;
+    background-size: 30px 30px !important;
+    background-position: 0 0 !important;
+    width: 30px !important;
+    background-color: white !important;
+    padding-bottom: 2px;
+}

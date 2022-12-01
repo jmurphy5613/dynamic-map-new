@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Rational Display Extra Bold";
+    src: url("/fonts/RationalDisplayExtraBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Rational Display Light";
+    src: url("/fonts/RationalDisplayLight.otf") format("opentype");
+}
+@font-face {
+    font-family: "Rational Display Black";
+    src: url("/fonts/RationalDisplayBlack.otf") format("opentype");
+}
+@font-face {
+    font-family: "Rational Display Medium";
+    src: url("/fonts/RationalDisplayMedium.otf") format("opentype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+html,
+body,
+#root,
+#map-div,
+#leaflet-map {
+    height: 100%;
+    /* width: 100%; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+
+body {
+    font-family: "Rational Display Medium";
+}
+#sidebar {
+    font-family: "Rational Display Medium";
+}
+
+div.comment {
+    font-family: "Rational Display Light";
+}
+
+div.comment .commentBy,
+div.comment .commentAbout,
+div.comment .commentDate {
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+    padding: 0;
+}
+
+div.comment .commentBy {
+    margin-bottom: 0;
+}
+
+div.comment .commentAbout {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+div.comment .commentDate {
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.comment .commentContent {
+    font-weight: 500;
+}
+div.comment .replyText {
+    font-family: "Rational Display Light";
+    width: 100%;
+    height: 45px;
+}
+
+div.comment .replyControls {
+    font-family: "Rational Display Light";
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 2px solid #2D2E74;
+}
+div.comment .replyChecks {
+    display: flex;
+}
+div.relpyChecks div.checkGroup {
+    padding-right: 15px;
+}
+
+.replyText,
+.replyReason {
+    margin-top: 8px;
+}
+
+#replyName,
+#replyText {
+    width: 100%;
+    font-family: "Rational Display Light";
+    outline: none;
+}
+
+div.replyDetails {
+    display: flex;
+    justify-content: space-between;
+}
+div.replyDetails button.hide {
+    margin-top: 18px;
+    height: 25px;
+}
+
+div.postedReplies {
+    max-height: 200px;
+    overflow: auto;
+}
+
+/* Cluster colors */
+.marker-cluster-small {
+    /* background-color: rgba(218, 94, 94, 0.6) !important; */
+    background-color: rgba(112, 111, 190, 0.5) !important;
+    /* background-color: #d4735c40 !important; */
+    color: #ffffff !important;
+}
+.marker-cluster-small div {
+    /* background-color: rgba(226, 36, 36, 0.6) !important; */
+    background-color: rgba(112, 111, 190, 0.5) !important;
+    /* background-color: #d4735c40 !important; */
+    color: #ffffff !important;
+}
+.marker-cluster-medium {
+    background-color: rgba(112, 111, 190, 0.5) !important;
+    /* background-color: #d4735c40 !important; */
+    color: #ffffff !important;
+}
+.marker-cluster-medium div {
+    background-color: rgba(112, 111, 190, 0.5) !important;
+    /* background-color: #d4735c40 !important; */
+    color: #ffffff !important;
+}
+
+.marker-cluster-large {
+    background-color: rgba(112, 111, 190, 0.5) !important;
+    /* background-color: #d4735c40 !important; */
+    color: #ffffff !important;
+}
+.marker-cluster-large div {
+    background-color: rgba(112, 111, 190, 0.5) !important;
+    /* background-color: #d4735c40 !important; */
+    color: #ffffff !important;
+}
+
+.newComment {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: "Rational Display Light";
+}
+.newComment .heading {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.newComment .popButtons {
+    padding-top: 10px;
+}
+
+.newComment button.popCancel,
+button.replyCancel {
+    font-family: "Rational Display Medium";
+    border-radius: 5px;
+    color: rgb(66, 66, 66);
+    border: 1px solid rgb(156, 156, 156);
+    background: none;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px;
+    min-width: 80px;
+}
+
+.newComment button.popCancel:hover,
+button.replyCancel:hover {
+    border: 1px solid rgb(100, 100, 100);
+    cursor: pointer;
+}
+button.replyCancel {
+    margin-left: 5px;
+}
+
+.newComment textarea {
+    font-family: "Rational Display Light";
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newComment .popName {
+    padding-top: 10px;
+}
+.newComment .popReason {
+    padding-top: 10px;
+}
+.newComment .popNeighborhood {
+    padding-top: 10px;
+}
+.newComment .popEmail {
+    padding-top: 5px;
+}
+.newComment input,
+.newComment select {
+    font-family: "Rational Display Light";
+    height: 40px;
+    border-radius: 5px;
+    width: 90%;
+    border: 1px solid gray;
+    background-color: #E0F2F2;
+}
+
+.newComment .checkGroup {
+    display: flex;
+}
+.newComment .checkGroup input {
+    height: auto;
+    width: auto;
+}
+
+.replyPop {
+    margin-left: 20px;
+    background-color:#E0F2F2;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 2px solid #2D2E74;
+}
+
+.replyPop .replyByDetails {
+    width: 100%;
+    text-align: right;
+}
+.replyPop p.commentAbout {
+    padding-bottom: 3px;
+    text-align: right;
+    margin-bottom: 0;
+}
+div.replyPop .commentBy {
+    text-align: right;
+    font-size: 11px;
+}
+
+div.comment button.button--primary.postReply {
+    margin-top: 15px;
+}
+
+button.button--primary {
+    font-family: "Rational Display Medium";
+    font-weight: 600;
+    color: white;
+    background-color: #2D2E74;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    min-width: 80px;
+}
+
+button.button--primary:hover {
+    cursor: pointer;
+    background-color: #1DB57C;
+}
+button.button--primary:focus {
+    border: none;
+    outline: none;
+}
+
+div.markerFilter {
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    background-size: 100%;
+    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65); */
+}
+
+/* NOT IN USE */
+div.markerFilter.idea.active {
+    background-image: url("/icons/layer_idea.png");
+}
+div.markerFilter.idea {
+    margin-bottom: 5px;
+    background-image: url("/icons/layer_idea_off.png");
+}
+div.markerFilter.place.active {
+    background-image: url("/icons/layer_place.png");
+}
+div.markerFilter.place {
+    margin-bottom: 5px;
+    background-image: url("/icons/layer_place_off.png");
+}
+div.markerFilter.issue.active {
+    background-image: url("/icons/layer_issue.png");
+}
+div.markerFilter.issue {
+    background-image: url("/icons/layer_issue_off.png");
+}
+
+button.button--admin {
+    font-family: "Rational Display Medium";
+    font-weight: 600;
+    color: white;
+    background-color: #2D2E74;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    min-width: 70px;
+}
+div.admin {
+    margin-top: 5px;
+}
+button.button--admin:hover {
+    cursor: pointer;
+    background-color: #1DB57C;
+}
+button.button--admin:focus {
+    border: none;
+    outline: none;
+}
+button.button--admin.hide {
+    margin-right: 5px;
+}
+
+/*  change the max width & height to % instead */
+@media only screen and (max-width: 600px) {
+    div.leaflet-popup-content {
+        max-width: 60vw;
+        max-height: 75vh;
+        overflow: auto;
+    }
+    div.markerFilter.leaflet-control.issue {
+        margin-bottom: 50%;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    div.leaflet-popup-content {
+        max-height: 75vh;
+        overflow: auto;
+    }
+    div.leaflet-bottom.leaflet-left {
+        display: flex;
+    }
+    div.markerFilter.leaflet-control {
+        margin-left: 8px;
+        margin-bottom: 30%;
+    }
+}

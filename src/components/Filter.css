@@ -1,0 +1,26 @@
+div.filter {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10%;
+}
+div.filter button.filter {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+button.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button.filter img {
+    height: 27px;
+    width: 27px;
+}
+div.filterList {
+    padding: 7px;
+}
