@@ -59,3 +59,4 @@ export const icons = {
 };
 
 //icons 
+//toolbar icons are found in the draw.css

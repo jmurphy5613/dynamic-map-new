@@ -229,6 +229,7 @@ function Leaflet(props) {
             }
         }
 
+        console.log(iconType, icon)
         layer.properties.type = iconType;
 
         const coords = layer.getLatLng();
@@ -253,7 +254,7 @@ function Leaflet(props) {
             visit: visit,
             submittedOn: new Date().toISOString(),
             upvote: 0,
-            type: icon,
+            type: iconType,
             email: email,
         };
         if (comments) {
