@@ -1,6 +1,14 @@
 :root {
     --clusterColor: rgba(6, 3, 210, 0.5);
-    --buttonColor: #111;
+
+    --headerColor: rgb(18, 19, 30);
+
+    
+    --getStartedButtonColor: rgb(17, 17, 17);
+    --getStartedButtonColorHover: rgb(0, 17, 255);
+
+    --spanishColor: #ce7e77;
+    --spanishColorHover: #c2c2c2;
 }
 
 
@@ -137,7 +145,7 @@
 
 #sidebar h1.sidebar-header {
     font-family: "Rational Display Medium";
-    background-color: #2D2E74;
+    background-color: var(--headerColor);
     font-weight: 500;
 }
 
@@ -219,11 +227,17 @@ h3.commentType {
 }
 
 button.button--primary.getStarted {
-    background-color: var(--buttonColor);
+    background-color: var(--getStartedButtonColor);
     padding: 10px;
+}
+button.button--primary.getStarted:hover {
+    background-color: var(--getStartedButtonColorHover);
 }
 
 button.button--primary.spanish {
-    background-color: #9797c5;
+    background-color: var(--spanishColor);
     padding: 5px;
 }
+button.button--primary.spanish:hover {
+    background-color: var(--spanishColorHover);
+}   
