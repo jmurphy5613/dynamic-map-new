@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
 import { Sidebar, Tab } from "react-leaflet-sidebarv2";
+import '../globals.css'
 
 import SideComment from "./SideComment";
 import "./Sidepanel.css";

@@ -37,6 +37,12 @@ const Draw = () => {
         iconAnchor: [38, 25],
     });
 
+    var helloWorld = new L.Icon({
+        iconUrl: "./icons/helloWorld.png",
+        iconSize: [75, 75],
+        iconAnchor: [38, 25]
+    })
+
     L.DrawToolbar.include({
         getModeHandlers: function (map) {
             return [
@@ -66,6 +72,11 @@ const Draw = () => {
                     handler: new L.Draw.Marker(map, { icon: smallEngagementBlue }),
                     title: "Add Engagement Action",
                 },
+                {
+                    enabled: true,
+                    handler: new L.Draw.Marker(map, { icon: helloWorld }),
+                    title: "Add Hello World"
+                }
             ];
         },
     });

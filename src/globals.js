@@ -15,7 +15,11 @@ export const firebaseConfig = {
 
 //icons
 
-export const iconTypes = ["climate", "accessibility", "vibrancy", "community", "engagement"]
+export const iconTypes = ["climate", "accessibility", "vibrancy", "community", "engagement", "helloWorld"]
+
+//mapbox
+export const mapboxURL =
+    "https://api.mapbox.com/styles/v1/landaudesign/ckp7lnszs5e9g18nuzy69f1ea/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGFuZGF1ZGVzaWduIiwiYSI6ImNrZ3F4dDIyeTBsMXIyenIzd2EwdnBsZTQifQ.MOBff0ku-Z960ubZPr3b6g";
 
 //icons that are loaded on each user end on first load
 export const icons = {
@@ -56,7 +60,15 @@ export const icons = {
             iconSize: new L.Point(75, 75),
         },
     }),
+    helloWorld: L.Icon.extend({
+        options: {
+            iconUrl:
+                "https://www.freecodecamp.org/news/content/images/2022/06/helloWorld.png",
+            iconAnchor: new L.Point(38, 22),
+            iconSize: new L.Point(75, 75),
+        },
+    }),
 };
 
 //icons 
-//toolbar icons are found in the draw.css
+//toolbar icons are found in the globals.css
